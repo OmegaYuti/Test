@@ -1,3 +1,5 @@
+a = document.getElementsByClassName("viewtablewhite")[1].firstElementChild.firstElementChild.firstElementChild.lastElementChild.firstElementChild.children[5];
+
 const newParticlesPerFrame = 50;
 
 const color = (hsl, o) => {
