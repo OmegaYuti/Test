@@ -63,7 +63,7 @@ class TextSparks
                             s :li.hasAttribute('data-saturation') ? Number(li.getAttribute('data-saturation')) : 100,
                             l :li.hasAttribute('data-lightness') ? Number(li.getAttribute('data-lightness')) : 50
                         }
-                    };
+                    }; 
                 })
             };
         });
