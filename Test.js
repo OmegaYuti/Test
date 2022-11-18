@@ -1,4 +1,4 @@
-const newParticlesPerFrame = 50;
+const newParticlesPerFrame = 50; 
 
 const color = (hsl, o) => {
     return `hsla(${hsl.h | 0}, ${hsl.s}%, ${hsl.l}%, ${o})`;
