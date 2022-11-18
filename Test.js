@@ -7,7 +7,7 @@ ul.setAttribute("data-time","2600");
 ul.append(li);
 div.append(ul);
 var canvas = document.createElement("canvas");
-var filee = document.getElementsByClassName("viewtablewhite")[1].firstElementChild.firstElementChild.firstElementChild.lastElementChild.firstElementChild.children[5];
+var filee = document.getElementsByClassName("viewtablewhite")[1].firstElementChild.firstElementChild.firstElementChild.lastElementChild.firstElementChild.children[3];
 filee.append(div);
 filee.append(canvas);
 const newParticlesPerFrame = 50;
