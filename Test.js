@@ -396,5 +396,5 @@ class TextSparks
     }
 }
 
-const a = new TextSparks();
-a.run();
+const particlees = new TextSparks();
+particlees.run();
