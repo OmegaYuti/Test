@@ -388,6 +388,7 @@ class TextSparks
 
     }
 }
+let particlees;
 function CreateElements() {
     var div = document.createElement("div");
     var ul = document.createElement("ul");
@@ -405,8 +406,8 @@ function CreateElements() {
     var filee = document.getElementsByClassName("viewtablewhite")[1].firstElementChild.firstElementChild.firstElementChild.lastElementChild.firstElementChild.children[3].firstElementChild;
     filee.append(div);
     filee.append(canvas);
-    const particlees = new TextSparks();
+    particlees = new TextSparks();
     particlees.fetchData();
     particlees.run();
 };
-window.onload = CreateElements;
+window.onload = CreateElements();
