@@ -405,8 +405,8 @@ function CreateElements() {
     var filee = document.getElementsByClassName("viewtablewhite")[1].firstElementChild.firstElementChild.firstElementChild.lastElementChild.firstElementChild.children[3].firstElementChild;
     filee.append(div);
     filee.append(canvas);
+    const particlees = new TextSparks();
     particlees.fetchData();
     particlees.run();
 };
-const particlees = new TextSparks();
 window.onload = CreateElements;
