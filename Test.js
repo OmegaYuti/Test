@@ -388,7 +388,7 @@ class TextSparks
 
     }
 }
-window.onload = function() {
+function CreateElements() {
     var div = document.createElement("div");
 var ul = document.createElement("ul");
 var li = document.createElement("li");
@@ -404,4 +404,4 @@ filee.append(canvas);
 const particlees = new TextSparks();
 particlees.run();
 };
-
+window.onload = CreateElements;
