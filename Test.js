@@ -402,6 +402,7 @@ var filee = document.getElementsByClassName("viewtablewhite")[1].firstElementChi
 filee.append(div);
 filee.append(canvas);
 const particlees = new TextSparks();
-particlees.run();
+    particlees.fetchData();
+    particlees.run();
 };
 window.onload = CreateElements;
