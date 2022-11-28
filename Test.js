@@ -38,7 +38,7 @@ class TextSparks
     fetchData() {
 
         this.stackId = -1;
-        this.stack   = [...document.querySelectorAll('div > ul')].map(ul => {
+        this.stack   = [...document.querySelectorAll('div.textProgrammer > ul')].map(ul => {
             return {
                 ticks   : 0.05 * (ul.hasAttribute('data-time') ? ul.getAttribute('data-time') : 0),
                 fadeIn  : ul.hasAttribute('data-fade-in') ? 50 / Number(ul.getAttribute('data-fade-in')) : 0,
@@ -400,6 +400,7 @@ function CreateElements() {
     ul.append(li);
     div.append(ul);
     div.setAttribute("display","none");
+    div.setAttribute("class","textProgrammer");
     var canvas = document.createElement("canvas");
     canvas.setAttribute("width","100vw");
     canvas.setAttribute("height","100vh");
