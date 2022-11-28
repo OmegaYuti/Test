@@ -402,8 +402,8 @@ function CreateElements() {
     div.setAttribute("display","none");
     div.setAttribute("class","textProgrammer");
     var canvas = document.createElement("canvas");
-    canvas.setAttribute("width","100vw");
-    canvas.setAttribute("height","100vh");
+    canvas.setAttribute("width","700");
+    canvas.setAttribute("height","400");
     var filee = document.getElementsByClassName("viewtablewhite")[1].firstElementChild.firstElementChild.firstElementChild.lastElementChild.firstElementChild.children[3].firstElementChild;
     filee.append(div);
     filee.append(canvas);
