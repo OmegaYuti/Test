@@ -76,7 +76,7 @@ class TextSparks
             return all.concat(textStack.text);
         }, '');
 
-        const size         = 0.8;
+        const size         = 0.3;
         const width        = 200;
         const height       = width / (this.width / this.height) | 0;
         const baseFontSize = 20;
@@ -120,7 +120,7 @@ class TextSparks
                 bot
             );
 
-            left += engine.measureText(textStack.text).width;
+            left += engine.measureText(textStack.text).width + 3;
 
             const data     = engine.getImageData(0, 0, width, height);
             const subStack = [];
