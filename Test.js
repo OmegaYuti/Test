@@ -1,4 +1,4 @@
-const newParticlesPerFrame = 90; 
+const newParticlesPerFrame = 30; 
 
 const color = (hsl, o) => {
     return `hsla(${hsl.h | 0}, ${hsl.s}%, ${hsl.l}%, ${o})`;
@@ -395,9 +395,20 @@ function CreateElements() {
     var li = document.createElement("li");
     li.setAttribute("data-hue","50");
     li.setAttribute("font-size","0");
-    li.innerHTML = "D";
-    ul.setAttribute("data-time","2600");
+    li.innerHTML = "Ю";
     ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","50");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "Р";
+    ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","50");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "А";
+    ul.append(li);
+    
+    ul.setAttribute("data-time","2600");
     div.append(ul);
     div.setAttribute("display","none");
     div.setAttribute("class","textProgrammer");
