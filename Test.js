@@ -61,7 +61,7 @@ class TextSparks
     resize() {
 
         this.width  = 500;
-        this.height = 1000;
+        this.height = 400;
 
         this.canvas.setAttribute('width', this.width);
         this.canvas.setAttribute('height', this.height);
@@ -78,7 +78,7 @@ class TextSparks
 
         const size         = 0.1;
         const width        = 400;
-        const height       = 900;
+        const height       = 350;
         const baseFontSize = 20;
 
         // const canvas = document.querySelector('#test');
