@@ -60,8 +60,8 @@ class TextSparks
 
     resize() {
 
-        this.width  = window.innerWidth;
-        this.height = window.innerHeight;
+        this.width  = 500;
+        this.height = 1000;
 
         this.canvas.setAttribute('width', this.width);
         this.canvas.setAttribute('height', this.height);
@@ -76,9 +76,9 @@ class TextSparks
             return all.concat(textStack.text);
         }, '');
 
-        const size         = 0.3;
-        const width        = 200;
-        const height       = width / (this.width / this.height) | 0;
+        const size         = 0.1;
+        const width        = 400;
+        const height       = 900;
         const baseFontSize = 20;
 
         // const canvas = document.querySelector('#test');
