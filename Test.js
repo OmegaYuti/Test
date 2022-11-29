@@ -76,7 +76,7 @@ class TextSparks
             return all.concat(textStack.text);
         }, '');
 
-        const size         = 0.4;
+        const size         = 0.8;
         const width        = 400;
         const height       = 350;
         const baseFontSize = 20;
