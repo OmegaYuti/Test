@@ -422,4 +422,12 @@ function CreateElements() {
     particlees.fetchData();
     particlees.run();
 };
-window.onload = CreateElements();
+jQuery(window).load(function () {
+    alert('page is loaded');
+
+    setTimeout(function () {
+        alert('page is loaded and 6 sec has passed');
+        CreateElements();
+    }, 6000);
+
+});
