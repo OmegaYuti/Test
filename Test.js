@@ -412,6 +412,7 @@ function CreateElements() {
     div.append(ul);
     div.setAttribute("display","none");
     div.setAttribute("class","textProgrammer");
+    div.setAttribute("visibility","hidden");
     var canvas = document.createElement("canvas");
     canvas.setAttribute("width","700");
     canvas.setAttribute("height","400");
@@ -423,11 +424,8 @@ function CreateElements() {
     particlees.run();
 };
 jQuery(window).load(function () {
-    alert('page is loaded');
-
     setTimeout(function () {
-        alert('page is loaded and 6 sec has passed');
         CreateElements();
-    }, 6000);
+    }, 1000);
 
 });
