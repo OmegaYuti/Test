@@ -446,7 +446,7 @@ function CreateElements() {
     
     div.setAttribute("display","none");
     div.setAttribute("class","textProgrammer");
-    div.setAttribute("visibility","hidden");
+    div.style.visibility = "hidden";
     var canvas = document.createElement("canvas");
     canvas.setAttribute("width","700");
     canvas.setAttribute("height","400");
