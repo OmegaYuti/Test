@@ -407,9 +407,43 @@ function CreateElements() {
     li.setAttribute("font-size","0");
     li.innerHTML = "А";
     ul.append(li);
-    
     ul.setAttribute("data-time","2600");
     div.append(ul);
+    
+    ul = document.createElement("ul");
+    li = document.createElement("li");
+    li.setAttribute("data-hue","90");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "P";
+    ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","70");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "R";
+    ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","50");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "O";
+    ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","30");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "G";
+    ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","10");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "E";
+    ul.append(li);
+    li = document.createElement("li");
+    li.setAttribute("data-hue","-10");
+    li.setAttribute("font-size","0");
+    li.innerHTML = "R";
+    ul.append(li);
+    ul.setAttribute("data-time","2600");
+    div.append(ul);
+    
     div.setAttribute("display","none");
     div.setAttribute("class","textProgrammer");
     div.setAttribute("visibility","hidden");
