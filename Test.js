@@ -125,7 +125,7 @@ class TextSparks
             const data     = engine.getImageData(0, 0, width, height);
             const subStack = [];
 
-            for (let i = 0, max = data.width * data.height; i < max; i++) {
+            for (let i = 0, max = data.width * data.height; i < max; i+=3) {
                 if (data.data[i * 4 + 3]) {
                     subStack.push({
                         x : (i % data.width) / data.width,
@@ -398,12 +398,12 @@ function CreateElements() {
     li.innerHTML = "Ю";
     ul.append(li);
     li = document.createElement("li");
-    li.setAttribute("data-hue","50");
+    li.setAttribute("data-hue","30");
     li.setAttribute("font-size","0");
     li.innerHTML = "Р";
     ul.append(li);
     li = document.createElement("li");
-    li.setAttribute("data-hue","50");
+    li.setAttribute("data-hue","10");
     li.setAttribute("font-size","0");
     li.innerHTML = "А";
     ul.append(li);
